@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="18dp"
+    android:background="@drawable/gradient"
+    tools:context=".Activity.Activity.AdminHome">
+    <Button
+        android:id="@+id/id_mall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/button_shape"
+        android:text="Add mall"
+        android:textSize="15dp"
+        android:textColor="@color/blue"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="160dp"
+        android:background="@drawable/button_shape"
+        android:text="Add Area"
+        android:textColor="@color/blue"
+        android:textSize="15dp"
+        android:id="@+id/id_admin_area"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="240dp"
+        android:background="@drawable/button_shape"
+        android:id="@+id/id_view_payment"
+        android:text="View payment"
+        android:textSize="15dp"
+        android:textColor="@color/blue"/>
+    <Button
+        android:id="@+id/id_location_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="320dp"
+        android:background="@drawable/button_shape"
+        android:text="Add location"
+        android:textSize="15dp"
+        android:textColor="@color/blue"/>
+
+
+</RelativeLayout>

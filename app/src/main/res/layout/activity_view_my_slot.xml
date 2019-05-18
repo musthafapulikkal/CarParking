@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/newback"
+    tools:context=".Activity.Activity.ViewMySlot">
+  <RelativeLayout
+      android:layout_width="300dp"
+      android:layout_height="350dp"
+      android:layout_marginTop="70dp"
+      android:background="@color/white"
+      android:layout_centerHorizontal="true">
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Mall ame"
+          android:textSize="15dp"
+          android:layout_marginTop="20dp"
+          android:textColor="#000000"/>
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="40dp"
+          android:layout_marginTop="40dp"
+          android:textStyle="bold"
+          android:textColor="@color/red"
+          android:id="@+id/id_s_name"
+          />
+      <TextView
+          android:id="@+id/txt_email"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Email"
+          android:textSize="15dp"
+          android:layout_below="@+id/id_s_name"
+          android:textColor="#000000"
+          />
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="40dp"
+          android:layout_below="@+id/txt_email"
+          android:textStyle="bold"
+          android:id="@+id/id_s_email"
+          android:textColor="@color/red"
+          />
+      <TextView
+          android:id="@+id/txt_slot"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/id_s_email"
+          android:text="Slot"
+          android:textSize="15dp"
+          android:textColor="#000000"/>
+      <TextView
+          android:textColor="@color/red"
+          android:layout_width="match_parent"
+          android:layout_height="40dp"
+          android:layout_below="@+id/txt_slot"
+          android:textStyle="bold"
+          android:id="@+id/id_s_slot"
+          />
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Area"
+          android:textSize="15dp"
+          android:layout_below="@+id/id_s_slot"
+          android:textColor="#000000"
+          android:id="@+id/txt_area"
+          />
+      <TextView
+          android:textColor="@color/red"
+          android:layout_width="match_parent"
+          android:layout_height="40dp"
+          android:layout_below="@+id/txt_area"
+          android:id="@+id/id_s_area"
+          android:textStyle="bold"
+          />
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/id_s_area"
+          android:text="Time"
+          android:textColor="@color/red"
+          android:textSize="15dp"
+          android:id="@+id/txt_time"
+          />
+
+      <TextView
+          android:id="@+id/id_s_time"
+          android:layout_width="50dp"
+          android:layout_height="40dp"
+          android:layout_below="@+id/id_s_area"
+          android:layout_marginStart="19dp"
+          android:layout_marginLeft="19dp"
+          android:layout_toEndOf="@+id/txt_time"
+          android:layout_toRightOf="@+id/txt_time"
+          android:textStyle="bold" />
+
+      <TextView
+          android:id="@+id/id_s_am_pm"
+          android:layout_width="50dp"
+          android:layout_height="40dp"
+          android:layout_below="@+id/id_s_area"
+          android:layout_marginStart="82dp"
+          android:layout_marginLeft="82dp"
+          android:layout_marginTop="0dp"
+          android:layout_toEndOf="@+id/txt_time"
+          android:layout_toRightOf="@+id/txt_time"
+          android:textStyle="bold" />
+
+      <TextView
+          android:id="@+id/id_s_hour"
+          android:layout_width="100dp"
+          android:layout_height="40dp"
+          android:layout_below="@+id/id_s_area"
+          android:layout_marginStart="154dp"
+          android:layout_marginLeft="154dp"
+          android:layout_marginTop="2dp"
+          android:layout_toEndOf="@+id/txt_time"
+          android:layout_toRightOf="@+id/txt_time"
+          android:textStyle="bold" />
+
+      <TextView
+          android:id="@+id/id_s_date"
+          android:layout_width="100dp"
+          android:layout_height="40dp"
+          android:layout_below="@+id/id_s_area"
+          android:layout_marginStart="20dp"
+          android:layout_marginLeft="20dp"
+          android:layout_marginTop="42dp"
+          android:layout_toEndOf="@+id/txt_time"
+          android:layout_toRightOf="@+id/txt_time"
+          android:textStyle="bold" />
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignTop="@+id/id_s_date"
+          android:layout_alignEnd="@+id/txt_email"
+          android:text="Date:"
+          android:textColor="#000000"
+          android:layout_alignRight="@+id/txt_email" />
+
+  </RelativeLayout>
+
+</RelativeLayout>

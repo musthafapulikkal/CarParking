@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/atm2"
+    android:padding="18dp"
+    tools:context=".Activity.Activity.Payment">
+    <EditText
+        android:paddingLeft="6dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="50dp"
+        android:background="@color/white"
+        android:id="@+id/id_name_on_card"
+        android:hint="Name on card"/>
+    <EditText
+        android:paddingLeft="6dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="130dp"
+        android:background="@color/white"
+        android:id="@+id/id_card_no"
+        android:inputType="number"
+        android:hint="card no"/>
+    <EditText
+        android:paddingLeft="6dp"
+        android:id="@+id/id_exp_date"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:layout_marginTop="210dp"
+        android:hint="Exp.date"/>
+    <EditText
+        android:paddingLeft="6dp"
+        android:layout_toEndOf="@+id/id_exp_date"
+        android:layout_marginLeft="50dp"
+        android:id="@+id/id_cvv"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:layout_marginTop="210dp"
+        android:hint="cvv"
+        android:inputType="numberPassword"
+        android:layout_toRightOf="@+id/id_exp_date" />
+    <RelativeLayout
+        android:id="@+id/spinner_layout"
+        android:layout_below="@+id/id_cvv"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:theme="@style/Spinner">
+    <Spinner
+        android:id="@+id/id_spinner_payment_hour"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        >
+
+    </Spinner>
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/id_pay_amount"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/id_cvv"
+        android:layout_toEndOf="@+id/spinner_layout"
+        android:background="@color/white"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="50dp"
+        android:text="amount"
+        android:textSize="18dp"
+        android:paddingLeft="6dp"
+        android:layout_toRightOf="@+id/spinner_layout" />
+    <RelativeLayout
+        android:id="@+id/id_layout_time"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/spinner_layout"
+        android:layout_marginTop="20dp"
+        android:theme="@style/Spinner"
+        android:background="@color/white">
+        <Spinner
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:id="@+id/id_spinne_time"
+            >
+
+        </Spinner>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:theme="@style/Spinner"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="50dp"
+        android:layout_below="@+id/id_pay_amount"
+        android:layout_toEndOf="@+id/id_layout_time"
+        android:layout_toRightOf="@+id/id_layout_time">
+        <Spinner
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:id="@+id/id_spinner_am">
+
+        </Spinner>
+
+    </RelativeLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/id_cvv"
+        android:layout_marginTop="150dp"
+        android:background="@color/yellow"
+        android:id="@+id/btn_payment"
+        android:text="Make payment"
+        android:textColor="@color/white"/>
+
+</RelativeLayout>

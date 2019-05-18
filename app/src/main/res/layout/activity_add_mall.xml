@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".Activity.Activity.AddMall">
+    <TextView
+android:layout_marginLeft="50dp"
+android:id="@+id/txt_state"
+android:layout_width="80dp"
+android:layout_height="30dp"
+android:layout_marginTop="50dp"
+android:text="State:"
+android:textColor="@color/white"
+android:textSize="20dp"/>
+<Spinner
+android:id="@+id/id_state_spinner"
+android:layout_width="150dp"
+android:layout_height="30dp"
+android:layout_toEndOf="@+id/txt_state"
+android:layout_marginTop="50dp"
+android:layout_marginLeft="30dp"
+android:layout_toRightOf="@+id/txt_state">
+
+</Spinner>
+<TextView
+android:layout_width="80dp"
+android:layout_height="30dp"
+android:text="District"
+android:textSize="20dp"
+android:textColor="@color/white"
+android:layout_marginTop="100dp"
+android:layout_marginLeft="50dp"
+android:id="@+id/txt_dist"
+    />
+<Spinner
+android:id="@+id/id_dist_spinner"
+android:layout_width="150dp"
+android:layout_height="30dp"
+android:layout_toEndOf="@+id/txt_dist"
+android:layout_toRightOf="@+id/txt_dist"
+android:layout_marginTop="100dp"
+android:layout_marginLeft="30dp">
+
+</Spinner>
+
+
+<EditText
+android:paddingLeft="6dp"
+android:layout_width="250dp"
+android:layout_height="40dp"
+android:layout_marginLeft="50dp"
+android:hint="mall name"
+android:layout_marginTop="150dp"
+android:id="@+id/id_mall_name"
+android:background="@color/white"
+android:inputType="textMultiLine"/>
+<EditText
+android:paddingLeft="6dp"
+android:layout_width="250dp"
+android:layout_height="40dp"
+android:layout_marginLeft="50dp"
+android:hint="place"
+android:layout_marginTop="200dp"
+android:id="@+id/id_mall_place"
+android:background="@color/white"
+android:inputType="textMultiLine"/>
+<ImageView
+android:layout_width="70dp"
+android:layout_height="70dp"
+android:src="@drawable/chooseimage"
+android:layout_marginTop="250dp"
+android:scaleType="fitXY"
+android:layout_marginLeft="50dp"
+android:id="@+id/id_image"
+    />
+<ImageButton
+android:id="@+id/id_choose_image"
+android:layout_width="30dp"
+android:layout_height="30dp"
+android:src="@drawable/image_icon"
+android:layout_alignBottom="@+id/id_image"
+android:layout_alignEnd="@+id/id_image"
+android:layout_alignRight="@+id/id_image"
+    />
+
+
+
+<Button
+android:layout_width="250dp"
+android:layout_height="wrap_content"
+android:background="@drawable/button_shape"
+android:text="Add"
+android:textColor="@color/blue"
+android:textSize="15dp"
+android:layout_marginTop="350dp"
+android:layout_marginLeft="50dp"
+android:id="@+id/btn_id_add_mall"/>
+
+
+    </RelativeLayout>

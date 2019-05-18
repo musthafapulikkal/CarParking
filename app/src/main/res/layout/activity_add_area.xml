@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    android:padding="18dp"
+    tools:context=".Activity.Activity.AddArea">
+    <RelativeLayout
+        android:id="@+id/layout_mall"
+        android:layout_marginTop="100dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:theme="@style/Spinner">
+        <Spinner
+            android:id="@+id/id_spinner_mall"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            >
+
+        </Spinner>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/layout_area"
+        android:layout_below="@+id/layout_mall"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:theme="@style/Spinner">
+        <Spinner
+            android:id="@+id/id_spinner_area"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            >
+
+        </Spinner>
+    </RelativeLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/btn_add_area"
+        android:background="@drawable/button_shape"
+        android:text="Add"
+        android:textColor="@color/blue"
+        android:layout_below="@+id/layout_area"
+        android:layout_marginTop="50dp"
+
+        />
+</RelativeLayout>

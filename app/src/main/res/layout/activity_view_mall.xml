@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".Activity.Activity.ViewMall">
+    <TextView
+        android:layout_marginLeft="50dp"
+        android:id="@+id/txt_state"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="50dp"
+        android:text="State:"
+        android:textColor="@color/white"
+        android:textSize="20dp"/>
+    <Spinner
+        android:id="@+id/id_mall_state_spinner"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_toEndOf="@+id/txt_state"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="30dp"
+        android:layout_toRightOf="@+id/txt_state">
+
+    </Spinner>
+    <TextView
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:text="District"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="50dp"
+        android:id="@+id/txt_dist"
+        />
+    <Spinner
+        android:id="@+id/id_mall_dist_spinner"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_toEndOf="@+id/txt_dist"
+        android:layout_toRightOf="@+id/txt_dist"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="30dp">
+
+    </Spinner>
+
+    <Button
+        android:id="@+id/btn_search"
+        android:drawableLeft="@drawable/ic_icon_search"
+        android:background="@color/white"
+        android:textColor="@color/blue"
+        android:text="search"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="161dp"
+        android:layout_toEndOf="@+id/txt_state"
+        android:layout_toRightOf="@+id/txt_state" />
+    <LinearLayout
+        android:layout_marginTop="250dp"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <android.support.v7.widget.RecyclerView
+            android:background="@color/white"
+            android:id="@+id/recycler_view"
+            android:layout_width="320dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
